@@ -1,0 +1,9 @@
+version: 0.1
+phases:
+  install:
+    commands:
+      - aws cloudformation package --template ./serverless.yaml --s3-bucket codedeployserverless --region ${AWS_REGION} --output-template-file processedserverless.yaml
+artifacts:
+  type: zip
+  files:
+    - processedserverless.yaml
