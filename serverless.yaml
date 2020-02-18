@@ -8,6 +8,6 @@ Resources:
       Handler: index.lambda_handler
       Runtime: python3.6
       AutoPublishAlias: live
-      CodeUri: ./index.py
+      CodeUri: ./lambda.zip
       DeploymentPreference:
           Type: Linear10PercentEvery1Minute
